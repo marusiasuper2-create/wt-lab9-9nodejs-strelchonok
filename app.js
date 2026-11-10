@@ -8,7 +8,7 @@ const products = JSON.parse(data);
 const server = http.createServer((req, res) => {
   //обраб маршрута /api/products
   if (req.method === "GET" && req.url === "/api/products") {
-    res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+    res.writeHead(200, { "sContent-Type": "application/json; charset=utf-8" });
     res.end(JSON.stringify(products));
     return;
   }
